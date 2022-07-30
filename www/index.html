@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <style>
+
+
+
+            
+            
+            *{
+                
+                
+                font-family:  'Poppins', sans-serif;
+              
+                
+                
+            }
+           
+        
+            ul{
+                
+                
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                
+            }
+            ul li{
+                align-content: center;
+                position: relative; 
+                list-style:none ;
+                
+                
+            }
+            ul li a{
+                align-content: center;
+                position: relative;
+                font-size: 3cm;
+                text-decoration: none;
+                line-height: 1em;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: transparent;
+                -webkit-text-stroke: 1px rgba(255,255,255,0.5);
+                
+            }
+            ul li a::before{
+                align-content: center;
+                content: attr(data-text);
+                position: absolute;
+                color: var(--clr);
+                width: 0;
+                overflow: hidden;
+                transition: 1s;
+                border-right: 8px solid var(--clr);
+                -webkit-text-stroke: 1px var(--clr);
+                
+            }
+            ul li a:hover::before{
+                align-content: center;
+                width: 100%;
+                filter: drop-shadow(0 0 25px var(--clr));
+                
+            }
+        </style>
+
+
+    
+
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Biographie</title>
+        <meta property="og:title" content="Niklas" />
+        <meta property="og:site_name" content="pre.bplace.net" />
+        <meta property="og:description" content="Niklas Links" />
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="theme-color" content="var(--bgColor)">
+    </head>
+    <body>
+        <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          
+      
+     <div class="jm-logo">
+
+      <a href="#">
+
+      <img id="userPhoto" class="animated rubberBand fast" src="images/niklas.jpg" alt="Niklas">
+
+      </a> 
+
+      </div>
+
+         
+        
+        <h1 class="animated jello">Niklas</h1>
+      
+        
+
+        <ul>
+           
+            
+           
+
+            <li style="--clr:#ffdd1c">
+                <a href="liriax/liriax.html" data-text="&nbsp;Portfolio">&nbsp;Portfolio&nbsp;</a>
+            </li>
+
+            <li style="--clr:#00dc82">
+                <a href="https://www.youtube.com/channel/UCp-cIw5C_0asd-QaBXuAnoA" data-text="&nbsp;YouTube">&nbsp;YouTube&nbsp;</a>
+            </li>
+
+            <li style="--clr:#dc00d4">
+                <a href="https://github.com/LiriaxX" data-text="&nbsp;Github">&nbsp;Github&nbsp;</a>
+            </li>
+
+
+
+
+
+
+
+        </ul>
+
+    
+
+        
+        
+
+        <a class="atrib" href="https://www.buymeacoffee.com/liriax">Buy me a Coffee ❤️</a>
+    </body>
+
+</html>
